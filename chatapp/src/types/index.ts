@@ -1,6 +1,6 @@
 export type TMessageAttachment = {
   uuid: string;
-  type: 'image';
+  type: "image";
   url: string;
   width: number;
   height: number;
@@ -34,6 +34,6 @@ export type TMessage = {
   updatedAt: number;
 };
 
-export type TMessageJSON = Omit<TMessage, 'replyToMessageUuid'> & {
-  replyToMessage?: Omit<TMessage, 'replyToMessageUuid'>;
+export type TMessageJSON = Omit<TMessage, "replyToMessageUuid"> & {
+  replyToMessage?: Omit<TMessage, "replyToMessageUuid">;
 };
